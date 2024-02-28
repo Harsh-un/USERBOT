@@ -35,7 +35,7 @@ async def collect_afk_messages(bot: Client, message: Message):
                 f"I am not available right now.\n"
                 f"Last seen: {last_seen}\n"
                 f"Reason: ```{AFK_REASON.upper()}```\n"
-                f"See you after I'm done doing whatever I'm doing.`"
+                f"milte hai ek chhote se break ke baad☁️.`"
             )
             await bot.send_message(
                 chat_id=GetChatID(message),
