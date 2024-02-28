@@ -20,8 +20,8 @@ ALIVE_TEXT = getenv("ALIVE_TEXT", '✘ υη υѕєявσт ✘
 ├• υρтιмє: {uptime}
 ├• ρутнσи: 3.9.7
 ├• ρуяσgяαм: 2.0.106
-├• ѕυρρσят: [Click]('https://t.me/un_bots')
-└• яєρσ: [Click]('https://t.me/harsh_un')')
+├• ѕυρρσят: [@un_bots]
+└• яєρσ: [@harsh_un]')
 PM_LOGGER = getenv("PM_LOGGER")
 LOG_GROUP = getenv("LOG_GROUP")
 GIT_TOKEN = getenv("GIT_TOKEN") #personal access token
