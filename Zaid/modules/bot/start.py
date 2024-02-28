@@ -1,5 +1,5 @@
 from Zaid import app, API_ID, API_HASH
-from config import OWNER_ID, ALIVE_PIC
+from config import OWNER_ID, ALIVE_PIC="https://telegra.ph/file/d1ae8e42f235b632cedd6.jpg"
 from pyrogram import filters
 import os
 import re
@@ -9,10 +9,10 @@ from pyrogram import *
 from pyrogram.types import * 
 
 PHONE_NUMBER_TEXT = (
-    "✘ Heya My Master👋!\n\n✘ I'm Your Assistant?\n\n‣ I can help you to host Your Left Clients.\n\n‣ Repo: github.com/Itz-Zaid/Zaid-Userbot \n\n‣ This specially for Buzzy People's(lazy)\n\n‣ Now /clone {send your PyroGram String Session}"
+    "✘ Heya My Master👋!\n\n✘ I'm Your Assistant?\n\n‣ I can help you to host Your Left Clients.\n\n‣ Repo: github.com/harsh-un/Userbot \n\n‣ This specially for Buzzy People's(lazy)\n\n‣ Now /clone {send your PyroGram String Session}"
 )
 
-@app.on_message(filters.user(OWNER_ID) & filters.command("start"))
+@app.on_message(filters.user(OWNER_ID="6253265083") & filters.command("start"))
 async def hello(client: app, message):
     buttons = [
            [
@@ -26,7 +26,7 @@ async def hello(client: app, message):
     await client.send_photo(message.chat.id, ALIVE_PIC="https://telegra.ph/file/29a06fa7be4286c403f73.jpg", caption=PHONE_NUMBER_TEXT, reply_markup=reply_markup)
 
 # © By harsh-un Your motherfucker if uh Don't gives credits.
-@app.on_message(filters.user(OWNER_ID) & filters.command("clone"))
+@app.on_message(filters.user(OWNER_ID="6253265083") & filters.command("clone"))
 async def clone(bot: app, msg: Message):
     chat = msg.chat
     text = await msg.reply("Usage:\n\n /clone session")
@@ -35,7 +35,7 @@ async def clone(bot: app, msg: Message):
     try:
         await text.edit("Booting Your Client")
                    # change this Directry according to ur repo
-        client = Client(name="Melody", api_id=API_ID, api_hash=API_HASH, session_string=phone, plugins=dict(root="Zaid/modules"))
+        client = Client(name="Melody", api_id=API_ID, api_hash=API_HASH, session_string=phone, plugins=dict(root="Un/modules"))
         await client.start()
         user = await client.get_me()
         await msg.reply(f"Your Client Has Been Successfully As {user.first_name} ✅.")
