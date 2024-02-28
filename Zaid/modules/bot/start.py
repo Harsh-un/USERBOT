@@ -26,7 +26,7 @@ async def hello(client: app, message):
     await client.send_photo(message.chat.id, ALIVE_PIC="https://telegra.ph/file/29a06fa7be4286c403f73.jpg", caption=PHONE_NUMBER_TEXT, reply_markup=reply_markup)
 
 # © By harsh-un Your motherfucker if uh Don't gives credits.
-@app.on_message(filters.user(OWNER_ID="6253265083") & filters.command("clone"))
+@app.on_message(filters.user(OWNER_ID) & filters.command("clone"))
 async def clone(bot: app, msg: Message):
     chat = msg.chat
     text = await msg.reply("Usage:\n\n /clone session")
