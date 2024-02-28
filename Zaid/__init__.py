@@ -15,13 +15,13 @@ SUDO_USERS.append(OWNER_ID)
 aiosession = ClientSession()
 
 if API_ID:
-   API_ID = "17411295"
+   API_ID = API_ID
 else:
    print("WARNING: API ID NOT FOUND USING UN API ⚡")
    API_ID = "6435225"
 
 if API_HASH:
-   API_HASH = "5c839c0129c36f5c550d62060a997bce"
+   API_HASH = API_HASH 
 else:
    print("WARNING: API HASH NOT FOUND USING UN API ⚡")   
    API_HASH = "4e984ea35f854762dcde906dce426c2d"
