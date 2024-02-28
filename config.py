@@ -14,16 +14,9 @@ OWNER_ID = int(getenv("OWNER_ID"))
 MONGO_URL = getenv("MONGO_URL")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 ALIVE_PIC = getenv("ALIVE_PIC", 'https://telegra.ph/file/29a06fa7be4286c403f73.jpg')
-ALIVE_TEXT = getenv("ALIVE_TEXT", '✘ υη υѕєявσт ✘
-
-❏ νєяѕισи: 2.1
-├• υρтιмє: {uptime}
-├• ρутнσи: 3.9.7
-├• ρуяσgяαм: 2.0.106
-├• ѕυρρσят: [@un_bots]
-└• яєρσ: [@harsh_un]')
+ALIVE_TEXT = getenv("ALIVE_TEXT", '✘ υη υѕєявσт ✘')
 PM_LOGGER = getenv("PM_LOGGER")
-LOG_GROUP = getenv("LOG_GROUP")
+LOG_GROUP = getenv("LOG_GROUP", '@un_bots')
 GIT_TOKEN = getenv("GIT_TOKEN") #personal access token
 REPO_URL = getenv("REPO_URL", "https://github.com/harsh-un/USERBOT")
 BRANCH = getenv("BRANCH", "master") #don't change
